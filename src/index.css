@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+
+  --color-background: #fbf4e8;
+  --color-foreground: #2a1813;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #2a1813;
+
+  --color-primary: #7a1f1f;
+  --color-primary-foreground: #fdf6ec;
+
+  --color-secondary: #f3e7d0;
+  --color-secondary-foreground: #5a3a1e;
+
+  --color-accent: #e0a72e;
+  --color-accent-foreground: #2a1813;
+
+  --color-muted: #f3ead8;
+  --color-muted-foreground: #7a6a55;
+
+  --color-border: #e9dcc2;
+  --color-ring: #7a1f1f;
+
+  --color-success: #2f7a3e;
+  --color-destructive: #b23a2e;
+
+  --radius: 0.875rem;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Fonts loaded via Google Fonts in head injected by main */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+/* Shimmer skeleton */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-muted) 0px,
+    #fff7ea 40px,
+    var(--color-muted) 80px
+  );
+  background-size: 600px;
+  animation: shimmer 1.6s infinite linear;
+}
+
+/* Hide scrollbar for marquees */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Marquee animation for top announcement bar */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
