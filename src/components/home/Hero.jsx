@@ -5,15 +5,15 @@ import Button from "../ui/Button.jsx"
 import { useCart } from "../../store/useStore.js"
 
 const badges = [
-  { icon: Leaf, label: "No Preservatives" },
+  { icon: Leaf, label: "100% Homemade" },
   { icon: Truck, label: "Free Delivery ₹599+" },
-  { icon: Clock, label: "Cut Fresh Daily" },
+  { icon: Clock, label: "Freshly Prepared Daily" },
 ]
 
 const floatChips = [
-  { label: "Chicken", top: "12%", left: "6%", delay: 0 },
-  { label: "Mutton", top: "70%", left: "2%", delay: 0.4 },
-  { label: "Fresh Fish", top: "16%", right: "8%", delay: 0.8 },
+  { label: "Sambar Masala", top: "12%", left: "6%", delay: 0 },
+  { label: "Chicken Masala", top: "70%", left: "2%", delay: 0.4 },
+  { label: "Biryani Masala", top: "16%", right: "8%", delay: 0.8 },
 ]
 
 export default function Hero() {
@@ -32,26 +32,25 @@ export default function Hero() {
         >
           <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-semibold text-secondary-foreground">
             <Star size={14} className="fill-accent text-accent" />
-            Rated 4.8/5 by 50,000+ families
+            Rated 4.9/5 by Homemade Food Lovers
           </span>
 
           <h1 className="mt-5 font-serif text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Farm Fresh Meat,
-            <span className="block text-primary">Delivered Daily.</span>
+            Authentic Homemade Masalas,
+            <span className="block text-primary">Delivered Fresh.</span>
           </h1>
 
           <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Premium chicken, mutton, fish & seafood — hygienically cut after you
-            order and delivered cold to your door. Never frozen, always fresh.
+            Authentic homemade spice blends crafted with premium ingredients, traditional recipes, and rich flavors. Freshly prepared and delivered to your doorstep.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <Button size="lg" variant="primary">
-              Shop Now
+              Shop Masalas
               <ArrowRight size={18} />
             </Button>
             <Button size="lg" variant="outline" onClick={openCart}>
-              View Offers
+              View Cart
             </Button>
           </div>
 
@@ -80,13 +79,13 @@ export default function Hero() {
           >
             {!loaded && <div className="shimmer absolute inset-0" />}
             <img
-              src="/images/hero-meat.png"
-              alt="Assortment of fresh raw meats, fish and eggs on a wooden board"
+              src="https://res.cloudinary.com/da6mndffu/image/upload/v1782640658/Replace_logo_on_glass_jar_202605281415_cu7yxl.jpg"
+             alt="Assortment of homemade spice powders and authentic handcrafted masalas"
               width={800}
               height={800}
               fetchPriority="high"
               onLoad={() => setLoaded(true)}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain brightness-90 transition-opacity duration-500 ease-in-out data-[loaded=true]:opacity-100 ring-1 ring-border/70"
             />
           </motion.div>
 
@@ -120,7 +119,7 @@ export default function Hero() {
             className="absolute bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-primary-foreground shadow-xl"
           >
             <span className="font-serif text-lg font-bold">10% OFF</span>
-            <span className="text-xs">on first order · FRESH10</span>
+            <span className="text-xs">on your first order · MAGIC10</span>
           </motion.div>
         </div>
       </div>
