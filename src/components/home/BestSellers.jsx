@@ -5,7 +5,17 @@ import Reveal from "../Reveal.jsx"
 import Button from "../ui/Button.jsx"
 import { cn } from "../../lib/utils.js"
 
-const filters = ["All", "Chicken", "Mutton", "Fish", "Seafood", "Eggs", "Marinated"]
+// const filters = ["All", "Chicken", "Mutton", "Fish", "Seafood", "Eggs", "Marinated"]
+
+const filters = [
+  "All",
+  "Spice Powders",
+  "Blended Masalas",
+  "Biryani Masalas",
+  "Curry Masalas",
+  "Special Mixes",
+  "Combo Packs",
+]
 
 export default function BestSellers() {
   const [active, setActive] = useState("All")

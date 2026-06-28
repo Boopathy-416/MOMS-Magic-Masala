@@ -74,10 +74,10 @@ export default function Header() {
             </button>
             <Link to="/" className="flex items-center gap-2">
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary font-serif text-xl font-bold text-primary-foreground">
-                Q
+                Sk
               </span>
               <span className="font-serif text-2xl font-bold tracking-tight text-primary">
-                Qasai
+                Mom's Magic Masala
               </span>
             </Link>
           </div>

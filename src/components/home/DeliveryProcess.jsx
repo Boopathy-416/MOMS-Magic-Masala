@@ -3,11 +3,31 @@ import { MousePointerClick, ShoppingCart, Scissors, Package, Truck } from "lucid
 import Reveal from "../Reveal.jsx"
 
 const steps = [
-  { icon: MousePointerClick, title: "Choose Products", desc: "Browse and pick your favourite fresh cuts." },
-  { icon: ShoppingCart, title: "Place Order", desc: "Checkout securely in just a few taps." },
-  { icon: Scissors, title: "Fresh Cutting", desc: "Cut to order by our expert butchers." },
-  { icon: Package, title: "Hygienic Packing", desc: "Sealed and cold-packed for freshness." },
-  { icon: Truck, title: "Fast Delivery", desc: "Delivered cold, right to your doorstep." },
+  {
+    icon: MousePointerClick,
+    title: "Choose Your Masalas",
+    desc: "Browse and select your favorite homemade spice blends.",
+  },
+  {
+    icon: ShoppingCart,
+    title: "Place Your Order",
+    desc: "Checkout securely in just a few simple steps.",
+  },
+  {
+    icon: Scissors,
+    title: "Freshly Prepared",
+    desc: "Handcrafted in small batches using traditional recipes.",
+  },
+  {
+    icon: Package,
+    title: "Carefully Packed",
+    desc: "Freshly packed in hygienic, sealed packaging to preserve flavor.",
+  },
+  {
+    icon: Truck,
+    title: "Doorstep Delivery",
+    desc: "Fresh homemade masalas delivered safely to your doorstep.",
+  },
 ]
 
 export default function DeliveryProcess() {

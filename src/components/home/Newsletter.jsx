@@ -21,11 +21,10 @@ export default function Newsletter() {
           <Mail size={26} />
         </span>
         <h2 className="mt-5 text-balance font-serif text-3xl font-bold sm:text-4xl">
-          Get ₹100 off your first order
+          Taste the Magic & Save ₹100
         </h2>
         <p className="mx-auto mt-3 max-w-md text-primary-foreground/80">
-          Subscribe for fresh deals, recipes and exclusive drops delivered to
-          your inbox.
+          Join the Mom Magic family to enjoy handcrafted homemade masala, exclusive deals, delicious recipes, and members only offers.
         </p>
 
         {done ? (

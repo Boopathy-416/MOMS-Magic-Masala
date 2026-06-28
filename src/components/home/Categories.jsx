@@ -11,10 +11,10 @@ export default function Categories() {
           Shop by category
         </p>
         <h2 className="mt-2 text-balance font-serif text-3xl font-bold tracking-tight sm:text-4xl">
-          Everything fresh, in one place
+          Homemade Masalas for Every Dish
         </h2>
         <p className="mt-3 text-muted-foreground">
-          From everyday chicken to premium seafood — handpicked and cut fresh.
+          From everyday spice powders to signature masala blends handcrafted with authentic flavors and premium ingredients.
         </p>
       </Reveal>
 

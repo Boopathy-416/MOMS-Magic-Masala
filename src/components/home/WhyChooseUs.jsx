@@ -4,18 +4,39 @@ import { Award, Truck, Zap, ShieldCheck, IndianRupee } from "lucide-react"
 import Reveal from "../Reveal.jsx"
 
 const reasons = [
-  { icon: Award, title: "Premium Quality", desc: "Hand-selected, grade-A cuts every time." },
-  { icon: Truck, title: "Fresh Delivery", desc: "Cold-chain packed, never frozen." },
-  { icon: Zap, title: "Fast Delivery", desc: "At your door in as little as 90 minutes." },
-  { icon: ShieldCheck, title: "100% Hygienic", desc: "Cut in temperature-controlled units." },
-  { icon: IndianRupee, title: "Fair Pricing", desc: "Honest, market-fresh prices daily." },
+  {
+    icon: Award,
+    title: "Premium Ingredients",
+    desc: "Made with carefully selected spices for authentic flavor.",
+  },
+  {
+    icon: Truck,
+    title: "Fresh Delivery",
+    desc: "Freshly prepared, securely packed and delivered to your doorstep.",
+  },
+  {
+    icon: Zap,
+    title: "Quick Delivery",
+    desc: "Fast doorstep delivery so your favorite masalas arrive fresh.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "100% Homemade",
+    desc: "Handcrafted in hygienic kitchens with traditional recipes.",
+  },
+  {
+    icon: IndianRupee,
+    title: "Affordable Prices",
+    desc: "Premium homemade quality at honest everyday prices.",
+  },
 ]
 
+
 const stats = [
-  { value: 50000, suffix: "+", label: "Happy Customers" },
-  { value: 120, suffix: "+", label: "Cities Served" },
-  { value: 4.8, suffix: "/5", label: "Average Rating", decimals: 1 },
-  { value: 99, suffix: "%", label: "On-time Delivery" },
+  { value: 50000, suffix: "+", label: "Happy Families" },
+  { value: 100, suffix: "+", label: "Homemade Recipes" },
+  { value: 4.9, suffix: "/5", label: "Customer Rating", decimals: 1 },
+  { value: 99, suffix: "%", label: "Freshly Prepared Orders" },
 ]
 
 function Counter({ value, suffix, decimals = 0 }) {
@@ -56,11 +77,14 @@ export default function WhyChooseUs() {
     <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
       <Reveal className="mx-auto mb-10 max-w-2xl text-center">
         <p className="text-sm font-bold uppercase tracking-widest text-accent">
-          Why Qasai
+          Why Mom's Magic
         </p>
         <h2 className="mt-2 text-balance font-serif text-3xl font-bold tracking-tight sm:text-4xl">
-          The freshest choice you can make
+          Homemade Goodness in Every Spoonful
         </h2>
+        <p className="mt-3 text-muted-foreground">
+  Crafted with traditional recipes, premium spices, and the authentic taste of home delivered fresh to your doorstep.
+</p>
       </Reveal>
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-5">

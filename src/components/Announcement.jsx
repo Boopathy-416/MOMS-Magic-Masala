@@ -2,10 +2,10 @@ import { useState } from "react"
 import { X } from "lucide-react"
 
 const messages = [
-  "Free delivery on orders above ₹599",
-  "Use code FRESH10 for 10% off your first order",
-  "Temperature-controlled delivery, every single time",
-  "Cut fresh after you order — never frozen",
+  " Taste the Magic of Homemade Masalas",
+  " Authentic flavors for every kitchen",
+  " Exclusive offers available every week",
+  " Freshly prepared • Carefully packed • Delivered with care",
 ]
 
 export default function Announcement() {
@@ -26,7 +26,7 @@ export default function Announcement() {
         aria-label="Dismiss announcement"
         className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full p-1 hover:bg-white/10"
       >
-        <X size={16} />
+        <X size={16} className="hover:text-black" />
       </button>
     </div>
   )

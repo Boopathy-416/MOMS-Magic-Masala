@@ -5,7 +5,7 @@ export default function PageLoader() {
         <div className="absolute inset-0 rounded-full border-4 border-muted" />
         <div className="absolute inset-0 animate-spin rounded-full border-4 border-transparent border-t-primary" />
       </div>
-      <p className="font-serif text-lg font-semibold text-primary">Qasai</p>
+      <p className="font-serif text-lg font-semibold text-primary">Mom's Magic Masala</p>
     </div>
   )
 }

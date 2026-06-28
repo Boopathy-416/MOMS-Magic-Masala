@@ -36,7 +36,7 @@ export const useCart = create(
       subtotal: () => get().items.reduce((t, i) => t + i.price * i.qty, 0),
       count: () => get().items.reduce((t, i) => t + i.qty, 0),
     }),
-    { name: "qasai-cart" }
+    { name: "mom-magic-cart" }
   )
 )
 
@@ -52,6 +52,6 @@ export const useWishlist = create(
         })),
       has: (id) => get().ids.includes(id),
     }),
-    { name: "qasai-wishlist" }
+    { name: "mom-magic-wishlist" }
   )
 )
