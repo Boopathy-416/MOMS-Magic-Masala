@@ -5,7 +5,7 @@ import { useCart } from "../store/useStore.js"
 import { formatPrice } from "../lib/utils.js"
 import Button from "./ui/Button.jsx"
 
-const COUPONS = { FRESH10: 0.1, SPL5: 0.05 }
+const COUPONS = { MAGIC10: 0.1, SPL5: 0.05 }
 const DELIVERY = 49
 const FREE_OVER = 599
 const GST_RATE = 0.05
@@ -77,7 +77,7 @@ export default function CartDrawer() {
                 </div>
                 <p className="font-serif text-lg font-semibold">Your cart is empty</p>
                 <p className="text-sm text-muted-foreground">
-                  Add some fresh cuts to get started.
+                  Add some homemade masalas to get started.
                 </p>
                 <Button onClick={closeCart} variant="primary">
                   Start shopping
@@ -161,7 +161,7 @@ export default function CartDrawer() {
                         <input
                           value={code}
                           onChange={(e) => setCode(e.target.value)}
-                          placeholder="Coupon code (try FRESH10)"
+                          placeholder="Coupon code (try MAGIC10)"
                           className="h-11 flex-1 bg-transparent text-sm outline-none"
                         />
                       </div>
@@ -204,7 +204,7 @@ export default function CartDrawer() {
                     </div>
                   </div>
                   <Button variant="primary" size="lg" className="mt-4 w-full">
-                    Proceed to Checkout
+                    CALL +91 63825 93232
                   </Button>
                   <p className="mt-2 flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
                     <ShieldCheck size={14} className="text-success" />
