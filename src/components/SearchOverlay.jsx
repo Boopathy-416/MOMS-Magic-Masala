@@ -4,7 +4,13 @@ import { Search, X, TrendingUp, Clock } from "lucide-react"
 import { bestSellers } from "../data/product.js"
 import { formatPrice } from "../lib/utils.js"
 
-const trending = ["Chicken curry cut", "Mutton boneless", "Salmon", "Prawns", "Tikka"]
+const trending = [
+  "Sambar Masala",
+  "Chicken Masala",
+  "Biryani Masala",
+  "Rasam Powder",
+  "Garam Masala",
+]
 
 export default function SearchOverlay({ open, onClose }) {
   const [query, setQuery] = useState("")
@@ -73,7 +79,7 @@ export default function SearchOverlay({ open, onClose }) {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && commit(query)}
-                placeholder="Search chicken, mutton, fish…"
+                placeholder="Search Sambar, Biryani, Chicken Masala..."
                 className="h-16 flex-1 bg-transparent text-lg outline-none placeholder:text-muted-foreground"
               />
               <button

@@ -1,5 +1,13 @@
-import { Link } from "react-router-dom"
-import { AtSign, Globe, Share2, MessageCircle, MapPin, Phone, Mail } from "lucide-react"
+import { Link } from "react-router-dom";
+import {
+  AtSign,
+  Globe,
+  Share2,
+  MessageCircle,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
 
 const columns = [
   {
@@ -43,14 +51,14 @@ const columns = [
       "Privacy Policy",
     ],
   },
-]
+];
 
 const socials = [
   { icon: AtSign, label: "Instagram" },
   { icon: Globe, label: "Facebook" },
   { icon: MessageCircle, label: "Twitter" },
   { icon: Share2, label: "YouTube" },
-]
+];
 
 export default function Footer() {
   return (
@@ -68,18 +76,21 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Premium fresh meat, delivered daily. Hygienically cut, never
-              frozen, always fresh to your door.
+              Experience the authentic taste of homemade masalas, handcrafted
+              with premium spices and traditional recipes. Freshly packed and
+              delivered to your door.
             </p>
             <div className="mt-5 flex flex-col gap-2 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
                 <Phone size={16} className="text-primary" /> +91 63825 93232
               </span>
               <span className="flex items-center gap-2">
-                <Mail size={16} className="text-primary" /> momsmagicmasalaofficial@gmail.com
+                <Mail size={16} className="text-primary" />{" "}
+                momsmagicmasalaofficial@gmail.com
               </span>
               <span className="flex items-center gap-2">
-                <MapPin size={16} className="text-primary" /> Tiruppur, Tamil Nadu, India - 641 687.
+                <MapPin size={16} className="text-primary" /> Tiruppur, Tamil
+                Nadu, India - 641 687.
               </span>
             </div>
           </div>
@@ -110,7 +121,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-2">
             {socials.map((s) => {
-              const Icon = s.icon
+              const Icon = s.icon;
               return (
                 <a
                   key={s.label}
@@ -120,11 +131,11 @@ export default function Footer() {
                 >
                   <Icon size={18} />
                 </a>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
